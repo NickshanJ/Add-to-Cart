@@ -9,7 +9,7 @@ const CartModal = ({ cart, removeFromCart, onClose }) => {
       <div className="bg-white p-4 rounded shadow-lg fixed">
         <div className='flex justify-between items-center'>
           <h2 className="text-[20px] font-bold">Cart</h2>
-          <button className="text-[30px]" onClick={onClose}>&times;</button>
+          <button className="text-[35px] text-red-500 active:text-red-300 active:translate-y-1 transition-transform" onClick={onClose}>&times;</button>
         </div>
         {cart.length === 0 ? (
           <p>No items in the cart</p>
