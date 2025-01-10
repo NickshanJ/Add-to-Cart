@@ -21,7 +21,7 @@ const ProductList = ({ addToCart }) => {
       <div className="justify-between items-center mt-auto">
       <div className='flex justify-between items-center mt-auto mb-2'>
         <p className="text-lg text-green-600 font-bold font-mono">${product.price}</p>
-        <p className="mt-2 font-semibold inline-flex"><FaStar className="text-yellow-400 mt-2 mr-1" />{product.rating.rate}({product.rating.count})</p>
+        <p className="mt-2 font-semibold inline-flex"><FaStar className="text-yellow-400 mt-1 mr-1" />{product.rating.rate} ({product.rating.count})</p>
         </div>
         <button className="w-full bg-[#FEE715FF] text-black active:bg-white active:translate-y-1 transition-transform font-semibold p-2 rounded mt-2" onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
