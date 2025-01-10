@@ -17,12 +17,12 @@ const ProductList = ({ addToCart }) => {
       <div>
         <img src={product.image} alt={product.title} className="w-full h-[300px] bg-cover bg-center" />
         <h3 className="mt-4 font-bold">{product.title}</h3>
-        <div className='flex justify-between items-center mt-auto'>
+      </div>
+      <div className="justify-between items-center mt-auto">
+      <div className='flex justify-between items-center mt-auto mb-2'>
         <p className="text-lg text-green-600 font-bold font-mono">${product.price}</p>
         <p className="mt-2 font-semibold inline-flex"><FaStar className="text-yellow-400 mt-2 mr-1" />{product.rating.rate}({product.rating.count})</p>
         </div>
-      </div>
-      <div className="flex justify-between items-center mt-auto">
         <button className="w-full bg-[#FEE715FF] text-black active:bg-white active:translate-y-1 transition-transform font-semibold p-2 rounded mt-2" onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
