@@ -11,7 +11,7 @@ const ProductList = ({ addToCart }) => {
   }, []);
 
   return (
-    <div className="product-list grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 bg-black">
+    <div className="product-list grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 bg-black">
   {products.map(product => (
     <div key={product.id} className="bg-white product flex flex-col justify-between border p-4 rounded shadow">
       <div>

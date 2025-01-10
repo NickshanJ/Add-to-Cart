@@ -6,13 +6,13 @@ const CartModal = ({ cart, removeFromCart, onClose }) => {
 
   return (
     <div className="cart-modal fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-4 rounded shadow-lg fixed">
+      <div className="bg-white p-4 w-[90%] md:w-[50%] rounded-xl shadow-lg fixed">
         <div className='flex justify-between items-center'>
           <h2 className="text-[20px] font-bold">Cart</h2>
           <button className="text-[35px] text-red-500 active:text-red-300 active:translate-y-1 transition-transform" onClick={onClose}>&times;</button>
         </div>
         {cart.length === 0 ? (
-          <p>No items in the cart</p>
+          <p className='text-center font-bold'>No items in the cart</p>
         ) : (
           <>
             <div className="cart-items max-h-60 overflow-y-auto">
@@ -34,7 +34,7 @@ const CartModal = ({ cart, removeFromCart, onClose }) => {
             </div>
             <div className="flex justify-end gap-4 mt-4">
               <h3 className="font-bold mt-2">Total: ${totalAmount.toFixed(2)}</h3>
-              <button className='py-2 px-3 font-bold rounded-xl bg-[#FEE715FF] active:bg-white active:translate-y-1 transition-transform'>Place Your Order</button>
+              <button className='py-2 px-3 font-bold rounded-xl bg-[#FEE715FF] active:bg- active:translate-y-1 transition-transform'>Place Your Order</button>
             </div>
           </>
         )}
