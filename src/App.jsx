@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import CartModal from './CArtModal';
 import CartIcon from './CartIcon';
-// import logo from './image/logo.png';
+import logo from './image/logo.png';
 import './App.css';
 
 function App() {
@@ -24,8 +24,7 @@ function App() {
   return (
     <div className="App">
       <nav className="bg-black text-white flex justify-between items-center">
-        <h1 className='p-6 text-[30px]'>Fake Store</h1>
-        {/* <img className='ml-6 w-[130px] h-[130px]' src={logo} alt="Fake Store" /> */}
+        <img className='ml-6 w-[130px] h-[130px]' src={logo} alt="Fake Store" />
         <i className='mr-6'><CartIcon itemCount={cart.length} onClick={() => setShowCart(true)} /></i>
       </nav>
       <ProductList addToCart={addToCart} />
