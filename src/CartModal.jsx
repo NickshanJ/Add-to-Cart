@@ -34,7 +34,7 @@ const CartModal = ({ cart, removeFromCart, onClose }) => {
             </div>
             <div className="flex justify-end gap-4 mt-4">
               <h3 className="font-bold mt-2">Total: ${totalAmount.toFixed(2)}</h3>
-              <button className='py-2 px-3 font-bold rounded-xl bg-[#FEE715FF] active:bg- active:translate-y-1 transition-transform'>Place Your Order</button>
+              <button className='py-2 px-3 font-bold rounded-xl bg-[#FEE715FF] active:bg-white active:translate-y-1 transition-transform'>Place Your Order</button>
             </div>
           </>
         )}
