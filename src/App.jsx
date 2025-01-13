@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import CartModal from './CartModal';
 import CartIcon from './CartIcon';
-import logo from './image/logo.png';
+import logo from './image/Logo.png';
 import './App.css';
 
 function App() {
