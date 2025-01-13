@@ -24,14 +24,15 @@ This project is a simple ReactJS application that fetches product data from the 
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/add-to-cart.git
+git clone https://github.com/NickshanJ/Add-to-Cart.git
+
 cd add-to-cart
 
 2. npm install
 
 3. npm run dev
 
-4. This Application will be available in : 
+4. This Application will be available in : https://addtocart00.netlify.app/
 
 
 ## Project Structure:
